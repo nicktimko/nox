@@ -69,7 +69,7 @@ Other useful projects
 
 Nox is not the only tool of its kind. If Nox doesn't quite fit your needs or you want to do more research, we recommend looking at these tools:
 
-- `tox <https://tox.readthedocs.org>`__ is the de-facto standard for managing multiple Python test environments, and is the direct spiritual ancestor to Nox.
+- `tox <https://tox.readthedocs.org>`__ is the de-facto standard for managing multiple Python test environments and is the direct spiritual ancestor to Nox.
 - `Invoke <https://www.pyinvoke.org/>`__ is a general-purpose task execution library, similar to Make. Nox can be thought of as if Invoke were tailored specifically to Python testing, so Invoke is a great choice for scripts that need to encompass far more than Nox's specialization.
 
 
