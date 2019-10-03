@@ -24,7 +24,7 @@ with ``@nox.session``. For example:
     def tests(session):
         session.run('pytest')
 
-You can also configure sessions to run against multiple Python versions as described in :ref:`virtualenv config` and  parametrize sessions as described in :ref:`parametrized sessions <parametrized>`.
+You can also configure sessions to run against multiple Python versions as described in :ref:`virtualenv config` and parametrize sessions as described in :ref:`parametrized sessions <parametrized>`.
 
 
 Session description
@@ -88,7 +88,7 @@ Configuring a session's virtualenv
 
 By default, Nox will create a new virtualenv for each session using the same interpreter that Nox uses. If you installed Nox using Python 3.6, Nox will use Python 3.6 by default for all of your sessions.
 
-You can tell Nox to use a different Python interpreter/version by specifying the ``python``  argument (or its alias ``py``) to ``@nox.session``:
+You can tell Nox to use a different Python interpreter/version by specifying the ``python`` argument (or its alias ``py``) to ``@nox.session``:
 
 .. code-block:: python
 
@@ -139,7 +139,7 @@ If you want to disable virtualenv creation altogether, you can set ``python`` to
     def tests(session):
         pass
 
-Finally you can also specify that the virtualenv should *always* be reused instead of recreated every time:
+Finally, you can also specify that the virtualenv should *always* be reused instead of recreated every time:
 
 .. code-block:: python
 
@@ -214,7 +214,7 @@ Session arguments can be parametrized with the :func:`nox.parametrize` decorator
         session.install(f'django=={django}')
         session.run('pytest')
 
-When you run ``nox``, it will create a two distinct sessions:
+When you run ``nox``, it will create two distinct sessions:
 
 .. code-block:: console
 
@@ -222,7 +222,7 @@ When you run ``nox``, it will create a two distinct sessions:
     nox > Running session tests(django='1.9')
     nox > pip install django==1.9
     ...
-    nox > Running session tests(djano='2.0')
+    nox > Running session tests(django='2.0')
     nox > pip install django==2.0
 
 
